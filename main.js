@@ -12,7 +12,6 @@ const addToExactMiddle = (bus, passenger) => {
   newArray.push(struggleBus.splice(middle, 0, passenger));
 }
 
-
 const addPassenger = (name, wallet, isStruggling, seat) => {
   // make a passenger object
   // add it on the bus
@@ -47,7 +46,7 @@ const allAboard = (bus) => {
   // given bus costs 5 bucks
   // if passenger can afford it, charge them
   // if not, kick them off
-  const busFare = 0;
+  const busFare = 5;
   const validPassengers = [];
   
   bus.forEach((passenger) => {
@@ -70,9 +69,9 @@ const busBuilder = (bus) => {
   let domString = '';
   for (var i = 0; i < bus.length; i++) {
     domString += `<div class="bus-seat">`;
-    domString +=   `<h4>${bus[i].name}</h4>`;
-    domString +=   `<p>${bus[i].wallet}</p>`;
-    domString +=   `<p>${bus[i].isStruggling}</p>`;
+    domString +=   `<h4 class="passenger-name">${bus[i].name}</h4>`;
+    domString +=   `<p>$${bus[i].wallet}.00</p>`;
+    domString +=   `<p>Struggling? ${bus[i].isStruggling}</p>`;
     domString += `</div>`;
   };
   printToDom('the-bus', domString);
