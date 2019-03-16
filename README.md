@@ -18,7 +18,7 @@ One-page locally hosted site to practice Javascript array methods.
 ## Getting Started
 Clone the repo:
 ```
-$git clone https://github.com/bobbybaxter/pie
+$git clone https://github.com/bobbybaxter/js-array-methods
 ```
 
 ### Prerequisites
@@ -28,7 +28,7 @@ $npm install -g http-server
 ```
 
 ## Running
-Browse to the pie directory and run HTTP Server by typing the following command into the terminal:
+Browse to the js-array-methods directory and run HTTP Server by typing the following command into the terminal:
 ```
 $ hs -p 5000
 ```
